@@ -1,0 +1,145 @@
+.container{
+width: 900px;
+margin: auto;
+
+background-color: #ffffff;
+box-shadow: 7px 14px 203px -30px rgba(0,0,0,0.61);
+
+
+}
+
+body{
+  font-family: 'Poppins', sans-serif;
+  margin: 0px;
+}
+
+.landing{
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 40% 60%;
+}
+
+.photo{
+  background-image: url("pics/landing.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.text{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.text-inner{
+  text-align: center;
+
+}
+
+.text-inner h1{
+  font-size: 2.8rem;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.text-inner p{
+  margin-bottom: 40px;
+}
+
+.btn{
+  border:  1px solid grey;
+  border-radius: 25px;
+  padding: 10px 30px;
+  text-decoration: none;
+
+color: black;
+}
+
+.nav{
+  height: 70px;
+  background-color: #21252B;
+display: flex;
+justify-content: center;
+align-items: center;
+
+}
+
+.list{
+  width: 60%;
+  color: white;
+display: flex;
+justify-content: space-around;
+
+}
+
+.list a
+{
+    color: #FFF;
+    text-decoration: none;
+    font: 20px Raleway;
+    margin: 0px 10px;
+    padding: 10px 10px;
+    position: relative;
+    z-index: 0;
+    cursor: pointer;
+}
+div.list a:before, div.list a:after
+{
+    position: absolute;
+    opacity: 0;
+    width: 0%;
+    height: 2px;
+    content: '';
+    background: #FFF;
+    transition: all 0.3s;
+}
+
+div.list a:before
+{
+    left: 0px;
+    top: 0px;
+}
+
+div.list a:after
+{
+    right: 0px;
+    bottom: 0px;
+}
+
+div.list a:hover:before, div.list a:hover:after
+{
+    opacity: 1;
+    width: 100%;
+}
+.box{
+
+  height: 500px;
+  display: grid;
+  grid-template-rows: 80% 20%;
+}
+.img{
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.img-1{
+  background-image: url("pics/one.jpeg");
+}
+
+.img-2{
+  background-image: url("pics/two.jpeg");
+}
+
+.img-3{
+  background-image: url("pics/3.jpeg");
+}
+
+.description{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: space-around;
+}
